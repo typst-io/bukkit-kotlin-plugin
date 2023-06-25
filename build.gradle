@@ -1,0 +1,35 @@
+plugins {
+    id 'org.jetbrains.kotlin.jvm' version '1.8.21'
+    id 'kr.entree.spigradle' version '2.4.3'
+    id 'com.github.johnrengelman.shadow' version '8.1.1'
+}
+
+group = 'io.typecraft'
+version = '1.0.0'
+
+repositories {
+    mavenCentral()
+    mavenLocal()
+}
+
+dependencies {
+    compileOnly spigot('1.19.4')
+    api 'io.typecraft:command-bukkit:1.0.0'
+    api 'io.typecraft:bukkit-object:0.4.1'
+    api 'io.typecraft:bukkit-view-core:5.1.3'
+    testImplementation 'org.jetbrains.kotlin:kotlin-test'
+}
+
+test {
+    useJUnitPlatform()
+}
+
+compileKotlin {
+    kotlinOptions.jvmTarget = '1.8'
+}
+
+compileTestKotlin {
+    kotlinOptions.jvmTarget = '1.8'
+}
+
+assemble.dependsOn(shadowJar)
