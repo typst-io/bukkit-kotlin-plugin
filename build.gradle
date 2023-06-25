@@ -33,3 +33,7 @@ compileTestKotlin {
 }
 
 assemble.dependsOn(shadowJar)
+
+spigot {
+    name 'BukkitKotlinPlugin'
+}
