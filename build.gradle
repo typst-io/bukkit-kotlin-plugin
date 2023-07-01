@@ -36,4 +36,5 @@ assemble.dependsOn(shadowJar)
 
 spigot {
     name 'BukkitKotlinPlugin'
+    excludeLibraries = ['*']
 }
