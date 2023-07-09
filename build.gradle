@@ -2,10 +2,11 @@ plugins {
     id 'org.jetbrains.kotlin.jvm' version '1.8.21'
     id 'kr.entree.spigradle' version '2.4.3'
     id 'com.github.johnrengelman.shadow' version '8.1.1'
+    id 'maven-publish'
 }
 
 group = 'io.typecraft'
-version = '1.0.0'
+version = '1.1.0'
 
 repositories {
     mavenCentral()
@@ -17,6 +18,8 @@ dependencies {
     api 'io.typecraft:command-bukkit:1.0.0'
     api 'io.typecraft:bukkit-object:0.4.1'
     api 'io.typecraft:bukkit-view-core:5.1.3'
+    api 'io.arrow-kt:arrow-core:1.1.5'
+    api 'io.arrow-kt:arrow-fx-coroutines:1.1.5'
     testImplementation 'org.jetbrains.kotlin:kotlin-test'
 }
 
