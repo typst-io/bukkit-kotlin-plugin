@@ -6,7 +6,7 @@ plugins {
 }
 
 group = 'io.typecraft'
-version = '2.0.0'
+version = '2.1.0'
 
 repositories {
     mavenLocal()
@@ -19,6 +19,7 @@ dependencies {
     api 'io.typecraft:bukkit-object:0.4.1'
     api 'io.typecraft:bukkit-view-core:6.0.0'
     api 'io.typecraft:bukkit-kotlin-serialization:0.4.0'
+    api 'io.typecraft:bukkit-inventory-kotlin:1.0.0'
     api 'io.arrow-kt:arrow-core:1.2.0-RC'
     api 'io.arrow-kt:arrow-fx-coroutines:1.2.0-RC'
     api 'org.jetbrains.kotlinx:kotlinx-serialization-json:1.5.1'
@@ -47,6 +48,7 @@ assemble.dependsOn(shadowJar)
 spigot {
     name 'BukkitKotlinPlugin'
     excludeLibraries = ['*']
+    apiVersion '1.20'
 }
 
 publishing {
