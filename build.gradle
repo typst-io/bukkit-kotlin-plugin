@@ -6,24 +6,24 @@ plugins {
 }
 
 group = 'io.typecraft'
-version = '2.1.2'
+version = '2.2.0'
 
 repositories {
     mavenLocal()
 }
 
 dependencies {
-    compileOnly spigot('1.19.4')
+    compileOnly spigot('1.16.5')
     api 'io.typecraft:command-bukkit:1.1.1'
     api 'io.typecraft:command-kotlin:1.1.1'
     api 'io.typecraft:bukkit-object:0.4.1'
     api 'io.typecraft:bukkit-view-core:6.0.2'
     api 'io.typecraft:bukkit-kotlin-serialization:0.4.0'
     api 'io.typecraft:bukkit-inventory-kotlin:1.0.0'
-    api 'io.arrow-kt:arrow-core:1.2.0-RC'
-    api 'io.arrow-kt:arrow-fx-coroutines:1.2.0-RC'
-    api 'org.jetbrains.kotlinx:kotlinx-serialization-json:1.5.1'
-    api 'com.charleskorn.kaml:kaml:0.54.0'
+    api 'io.arrow-kt:arrow-core:1.2.1'
+    api 'io.arrow-kt:arrow-fx-coroutines:1.2.1'
+    api 'org.jetbrains.kotlinx:kotlinx-serialization-json:1.6.2'
+    api 'com.charleskorn.kaml:kaml:0.57.0'
     testImplementation 'org.jetbrains.kotlin:kotlin-test'
 }
 
@@ -48,7 +48,7 @@ assemble.dependsOn(shadowJar)
 spigot {
     name 'BukkitKotlinPlugin'
     excludeLibraries = ['*']
-    apiVersion '1.20'
+    apiVersion '1.16'
 }
 
 publishing {
