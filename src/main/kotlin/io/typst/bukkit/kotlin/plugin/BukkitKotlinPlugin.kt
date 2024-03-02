@@ -1,4 +1,4 @@
-package io.typecraft.bukkit.kotlin.plugin
+package io.typst.bukkit.kotlin.plugin
 
 import org.bukkit.plugin.java.JavaPlugin
 

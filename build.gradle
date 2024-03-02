@@ -1,12 +1,12 @@
 plugins {
-    id 'org.jetbrains.kotlin.jvm' version '1.9.21'
+    id 'org.jetbrains.kotlin.jvm' version '1.9.22'
     id 'kr.entree.spigradle' version '2.4.3'
     id 'com.github.johnrengelman.shadow' version '8.1.1'
     id 'maven-publish'
 }
 
-group = 'io.typecraft'
-version = '2.2.0'
+group = 'io.typst'
+version = '2.3.0'
 
 repositories {
     mavenLocal()
@@ -18,12 +18,13 @@ dependencies {
     api 'io.typecraft:command-kotlin:1.1.1'
     api 'io.typecraft:bukkit-object:0.4.1'
     api 'io.typecraft:bukkit-view-core:6.0.2'
-    api 'io.typecraft:bukkit-kotlin-serialization:0.4.0'
+    api 'io.typst:bukkit-kotlin-serialization:1.1.0'
     api 'io.typecraft:bukkit-inventory-kotlin:1.0.0'
     api 'io.arrow-kt:arrow-core:1.2.1'
     api 'io.arrow-kt:arrow-fx-coroutines:1.2.1'
-    api 'org.jetbrains.kotlinx:kotlinx-serialization-json:1.6.2'
+    api 'org.jetbrains.kotlinx:kotlinx-serialization-json:1.6.3'
     api 'com.charleskorn.kaml:kaml:0.57.0'
+    api 'org.jooq:jooq:3.14.16'
     testImplementation 'org.jetbrains.kotlin:kotlin-test'
 }
 
