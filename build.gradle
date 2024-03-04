@@ -6,7 +6,7 @@ plugins {
 }
 
 group = 'io.typst'
-version = '2.3.0'
+version = '3.0.0'
 
 repositories {
     mavenLocal()
@@ -14,12 +14,12 @@ repositories {
 
 dependencies {
     compileOnly spigot('1.16.5')
-    api 'io.typecraft:command-bukkit:1.1.1'
-    api 'io.typecraft:command-kotlin:1.1.1'
-    api 'io.typecraft:bukkit-object:0.4.1'
-    api 'io.typecraft:bukkit-view-core:6.0.2'
+    api 'io.typst:command-bukkit:2.0.0'
+    api 'io.typst:command-kotlin:2.0.0'
+    api 'io.typst:bukkit-object:1.0.0'
+    api 'io.typst:bukkit-view-core:7.0.1'
     api 'io.typst:bukkit-kotlin-serialization:1.1.0'
-    api 'io.typecraft:bukkit-inventory-kotlin:1.0.0'
+    api 'io.typst:bukkit-inventory-kotlin:1.0.0'
     api 'io.arrow-kt:arrow-core:1.2.1'
     api 'io.arrow-kt:arrow-fx-coroutines:1.2.1'
     api 'org.jetbrains.kotlinx:kotlinx-serialization-json:1.6.3'
