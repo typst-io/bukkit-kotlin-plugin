@@ -6,7 +6,7 @@ plugins {
 }
 
 group = 'io.typst'
-version = '3.0.0'
+version = '3.0.1'
 
 repositories {
     mavenLocal()
@@ -14,8 +14,8 @@ repositories {
 
 dependencies {
     compileOnly spigot('1.16.5')
-    api 'io.typst:command-bukkit:2.0.0'
-    api 'io.typst:command-kotlin:2.0.0'
+    api 'io.typst:command-bukkit:2.0.1'
+    api 'io.typst:command-kotlin:2.0.1'
     api 'io.typst:bukkit-object:1.0.0'
     api 'io.typst:bukkit-view-core:7.0.1'
     api 'io.typst:bukkit-kotlin-serialization:1.1.0'
